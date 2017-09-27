@@ -1,0 +1,13 @@
+Git Friends - A Single Page Application -
+
+Description:
+Create a service that allows a user to search for a GitHub username. On a successful search return, display the user's GitHub handle, follower count, and a list of the user's followers (just the avatar).
+
+Technical choices, and architecture:
+Given the time allotment I chose a simplified and straighforward approach. Maintain a separation of concerns by
+keeping JS, HTML, CSS and any dependencies self contained.
+
+Given more time I would delved into error handling or thought up other edge cases.  There is simplicity in elegance and elegance in simplicity. Given the simple fact that either there is or there is not a 'user with the handle' lent itself to a simple solution. Adding additional unecessary features to something that should be simple isnt like putting lipstick on a pig, its more like putting a pig on a lipstick.
+
+
+Link to the hosted application.

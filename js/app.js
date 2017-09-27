@@ -2,14 +2,12 @@ $(document).ready(function() {
 
     $('.btn#userNameSubmit').on('click',
         function() {
-            var gitUserName = $('#githubUserName').val();
-            var url = 'https://api.github.com/users/';
-            var urlUserName = 'https://api.github.com/users/' + gitUserName;
-            var gitRepo = 'https://api.github.com/users/' + gitUserName + '/repos';
-            console.log(gitUserName + " hello");
+            var gitUserName = $('#githubUserName').val(),
+            	url = 'https://api.github.com/users/';
+             	urlUserName = 'https://api.github.com/users/' + gitUserName,
+            	gitRepo = 'https://api.github.com/users/' + gitUserName + '/repos';
 
             getUserName(urlUserName);
-
         });
 
      function getUserName(url) {
@@ -17,7 +15,7 @@ $(document).ready(function() {
             url: url,
             dataType: "jsonp",
             success: function(returnData, status) {
-                console.log(returnData);
+
             }
         });
     }
